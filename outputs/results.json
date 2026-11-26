@@ -1,0 +1,97 @@
+{
+  "config": {
+    "seed": 42,
+    "n_sessions": 24000,
+    "days": 14,
+    "alpha": 0.05,
+    "power": 0.8,
+    "baseline_conversion": 0.1,
+    "relative_lift": 0.2,
+    "treatment_median_time_ratio": 0.5,
+    "aov_noninferiority_margin": -0.03,
+    "payment_error_margin": 0.005,
+    "simulations": 2000,
+    "bootstrap_resamples": 5000,
+    "bayesian_draws": 200000
+  },
+  "design": 3835,
+  "validation": {
+    "srm_p_value": 0.38001089264974985,
+    "srm_flag": false,
+    "aa_false_positive_rate": 0.0475,
+    "aa_ci_low": 0.03817775804862371,
+    "aa_ci_high": 0.05682224195137629,
+    "empirical_power": 0.9995,
+    "balance_file": "outputs/tables/balance.csv"
+  },
+  "analysis": {
+    "control_rate": 0.0966191581040769,
+    "treatment_rate": 0.12579617834394904,
+    "control_n": 12068,
+    "treatment_n": 11932,
+    "control_conversions": 1166,
+    "treatment_conversions": 1501,
+    "relative_lift": 0.3019796571653319,
+    "relative_ci_low": 0.22977331481788849,
+    "relative_ci_high": 0.37418599951277537,
+    "bootstrap_ci_low": 0.21266695007484815,
+    "bootstrap_ci_high": 0.39699802711689797,
+    "absolute_lift": 0.029177020239872148,
+    "absolute_ci_low": 0.021227730083591047,
+    "absolute_ci_high": 0.037126310396153245,
+    "z_statistic": 7.1909017680900185,
+    "z_p_value": 6.436477980626716e-13,
+    "chi_square_p_value": 6.436477980626807e-13,
+    "fisher_p_value": 6.189223951240765e-13,
+    "adjusted_odds_ratio": 1.3444326392409596,
+    "adjusted_or_ci_low": 1.2396955127849267,
+    "adjusted_or_ci_high": 1.4580186044199974,
+    "checkout": {
+      "control_median": 343.0932053683447,
+      "treatment_median": 171.94142234077535,
+      "control_mean": 386.7011353918042,
+      "treatment_mean": 192.68781032784136,
+      "median_reduction": 0.4988492349879703,
+      "mean_reduction": 0.5017138748956329,
+      "mann_whitney_p": 0.0,
+      "welch_log_p": 0.0
+    },
+    "aov_pass": true,
+    "aov_relative_effect": 0.03164143787306539,
+    "aov_ci_low": -0.016463623340908833,
+    "payment_error_pass": true,
+    "payment_error_difference": -0.0015462718747301998,
+    "payment_error_upper": 0.0017902428834939235,
+    "bayes_probability_treatment_better": 1.0,
+    "bayes_relative_lift_mean": 0.3028730853599347,
+    "bayes_ci_low": 0.2115129610380193,
+    "bayes_ci_high": 0.39915026992551556,
+    "expected_loss_control": 0.02918476135938456,
+    "expected_loss_treatment": 0.0,
+    "decision": "SHIP",
+    "decision_reasons": {
+      "primary": true,
+      "aov": true,
+      "payment_error": true
+    }
+  },
+  "conversion": [
+    {
+      "arm": "control",
+      "sessions": 12068,
+      "conversions": 1166,
+      "rate": 0.0966191581040769,
+      "ci_low": 0.09147574183541751,
+      "ci_high": 0.10201929923090908
+    },
+    {
+      "arm": "treatment",
+      "sessions": 11932,
+      "conversions": 1501,
+      "rate": 0.12579617834394904,
+      "ci_low": 0.11996615194672523,
+      "ci_high": 0.131867073988037
+    }
+  ],
+  "runtime_seconds": 0.8224368095397949
+}
