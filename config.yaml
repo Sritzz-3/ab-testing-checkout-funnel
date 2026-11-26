@@ -1,0 +1,13 @@
+seed: 42
+n_sessions: 24000
+days: 14
+alpha: 0.05
+power: 0.80
+baseline_conversion: 0.10
+relative_lift: 0.20
+treatment_median_time_ratio: 0.50
+aov_noninferiority_margin: -0.03
+payment_error_margin: 0.005
+simulations: 2000
+bootstrap_resamples: 5000
+bayesian_draws: 200000
