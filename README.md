@@ -77,7 +77,7 @@ make setup
 make all
 ```
 
-Reproducibility: Python 3.11.18, seed 42, measured runtime 0.83 seconds.
+Reproducibility: Python 3.11.18, seed 42, measured runtime 0.80 seconds.
 
 Repository structure:
 
