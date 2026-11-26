@@ -1,0 +1,5 @@
+covariate,p_value
+device,0.4834122316227476
+traffic_source,0.3357417958310299
+user_type,0.6184614742309089
+day_of_week,0.7466239415435916
