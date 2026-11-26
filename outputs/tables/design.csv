@@ -1,0 +1,2 @@
+metric,H0,H1,alpha,power,baseline_rate,relative_mde,required_n_per_arm,actual_n_per_arm,adequately_powered
+conversion_rate,p_treatment = p_control,p_treatment != p_control,0.05,0.8,0.1,0.2,3835,12000,True
